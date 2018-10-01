@@ -11,7 +11,7 @@ def parseLine(line):
   return (age, numFriends)
 
 # reading source data
-lines = sc.textFile("file:///SparkCourse/fakefriends.csv")
+lines = sc.textFile("file:///SparkCourse/data/fakefriends.csv")
 
 # transform input data into (key, value) RDD each line
 rdd = lines.map(parseLine)
